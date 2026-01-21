@@ -8,6 +8,7 @@ const Hero = () => {
 
     useEffect(() => {
         if (videoRef.current) {
+            videoRef.current.muted = true; // Ensure muted is set
             videoRef.current.play().catch(error => {
                 console.log("Video autoplay failed:", error);
             });
@@ -25,6 +26,7 @@ const Hero = () => {
                     muted
                     loop
                     playsInline
+                    preload="auto"
                 >
                     <source src="/videos/hero.mp4" type="video/mp4" />
                 </video>
