@@ -2,12 +2,12 @@ import Image from 'next/image';
 import styles from './Collections.module.css';
 
 const items = [
-    { id: 1, title: 'NEBULA VEST', price: '$890', keywords: 'fashion,purple,futuristic' },
-    { id: 2, title: 'VOID COAT', price: '$2,400', keywords: 'fashion,black,coat' },
-    { id: 3, title: 'AETHER DRESS', price: '$1,200', keywords: 'fashion,white,dress' },
-    { id: 4, title: 'QUANTUM BOOTS', price: '$950', keywords: 'fashion,boots,futuristic' },
-    { id: 5, title: 'FLUX JACKET', price: '$1,100', keywords: 'fashion,orange,jacket' },
-    { id: 6, title: 'ZERO PANTS', price: '$780', keywords: 'fashion,grey,pants' },
+    { id: 1, title: 'NEBULA VEST', price: '$890', image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&q=80&w=800' },
+    { id: 2, title: 'VOID COAT', price: '$2,400', image: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800' },
+    { id: 3, title: 'AETHER DRESS', price: '$1,200', image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=800' },
+    { id: 4, title: 'QUANTUM BOOTS', price: '$950', image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800' },
+    { id: 5, title: 'FLUX JACKET', price: '$1,100', image: 'https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&q=80&w=800' },
+    { id: 6, title: 'ZERO PANTS', price: '$780', image: 'https://images.unsplash.com/photo-1621186835104-d32095ccfe9?auto=format&fit=crop&q=80&w=800' },
 ];
 
 const Collections = () => {
@@ -22,7 +22,7 @@ const Collections = () => {
                     <div key={item.id} className={styles.card}>
                         <div className={styles.imageWrapper}>
                             <Image
-                                src={`https://loremflickr.com/400/533/fashion?lock=${item.id}`}
+                                src={item.image}
                                 alt={item.title}
                                 fill
                                 style={{ objectFit: 'cover' }}
