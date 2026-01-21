@@ -7,7 +7,7 @@ const items = [
     { id: 3, title: 'AETHER DRESS', price: '$1,200', image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=800' },
     { id: 4, title: 'QUANTUM BOOTS', price: '$950', image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800' },
     { id: 5, title: 'FLUX JACKET', price: '$1,100', image: 'https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&q=80&w=800' },
-    { id: 6, title: 'ZERO PANTS', price: '$780', image: 'https://images.unsplash.com/photo-1621186835104-d32095ccfe9?auto=format&fit=crop&q=80&w=800' },
+    { id: 6, title: 'ZERO PANTS', price: '$780', image: 'https://images.unsplash.com/photo-1506634572416-48cdfe530110?auto=format&fit=crop&q=80&w=800' },
 ];
 
 const Collections = () => {
