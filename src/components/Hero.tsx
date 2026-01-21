@@ -6,6 +6,14 @@ import styles from './Hero.module.css';
 const Hero = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
 
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.play().catch(error => {
+                console.log("Video autoplay failed:", error);
+            });
+        }
+    }, []);
+
     return (
         <section className={styles.hero}>
             <div className={styles.background}>
