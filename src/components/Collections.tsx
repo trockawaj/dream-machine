@@ -1,12 +1,12 @@
 import styles from './Collections.module.css';
 
 const items = [
-    { id: 1, title: 'NEBULA VEST', price: '$890' },
-    { id: 2, title: 'VOID COAT', price: '$2,400' },
-    { id: 3, title: 'AETHER DRESS', price: '$1,200' },
-    { id: 4, title: 'QUANTUM BOOTS', price: '$950' },
-    { id: 5, title: 'FLUX JACKET', price: '$1,100' },
-    { id: 6, title: 'ZERO PANTS', price: '$780' },
+    { id: 1, title: 'NEBULA VEST', price: '$890', styleClass: 'nebula' },
+    { id: 2, title: 'VOID COAT', price: '$2,400', styleClass: 'void' },
+    { id: 3, title: 'AETHER DRESS', price: '$1,200', styleClass: 'aether' },
+    { id: 4, title: 'QUANTUM BOOTS', price: '$950', styleClass: 'quantum' },
+    { id: 5, title: 'FLUX JACKET', price: '$1,100', styleClass: 'flux' },
+    { id: 6, title: 'ZERO PANTS', price: '$780', styleClass: 'zero' },
 ];
 
 const Collections = () => {
@@ -19,7 +19,7 @@ const Collections = () => {
             <div className={styles.grid}>
                 {items.map((item) => (
                     <div key={item.id} className={styles.card}>
-                        <div className={styles.imagePlaceholder}>
+                        <div className={`${styles.imagePlaceholder} ${styles[item.styleClass]}`}>
                             <div className={styles.overlay} />
                         </div>
                         <div className={styles.info}>
